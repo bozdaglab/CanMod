@@ -17,8 +17,8 @@ if (!exists("cancer.type")){
 # Load required input for CanMod  ---------------------------------------------------------
 load(paste(cancer.type, "variable.selection.data.rda", sep = "/" ))
 
-load("databases/miRNA_mRNA_interactions.rda")
-load("databases/TF.target.rda")
+load("miRNA_mRNA_interactions.rda")
+load("TF.target.rda")
 
 putative.miRNA.mRNA.interactions = putative.miRNA.mRNA.interactions
 colnames(putative.miRNA.mRNA.interactions) = c("miRNA","target")
